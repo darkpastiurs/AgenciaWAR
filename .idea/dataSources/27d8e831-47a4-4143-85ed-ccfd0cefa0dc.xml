@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="BD">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>10.4</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="agencia_vuelo">
+      <ObjectId>61795</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>116</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="arbol_genealogico">
+      <ObjectId>62064</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="mail">
+      <ObjectId>43256</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="movieplex">
+      <ObjectId>25863</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="7" parent="1" name="so_ventas">
+      <ObjectId>42497</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="8" parent="1" name="tienda_yugioh">
+      <ObjectId>61328</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="9" parent="1" name="unab_carga">
+      <ObjectId>25500</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="10" parent="1" name="jamesUser">
+      <ObjectId>43257</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="14" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="15" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="16" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="17" parent="2" name="avr">
+      <ObjectId>61915</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-10-22.21:13:09.006</IntrospectionTimestamp>
+      <IntrospectionStateNumber>4124</IntrospectionStateNumber>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="18" parent="2" name="cat">
+      <ObjectId>61917</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-10-22.21:13:09.006</IntrospectionTimestamp>
+      <IntrospectionStateNumber>4125</IntrospectionStateNumber>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="19" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="20" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
+      <Current>1</Current>
+    </schema>
+    <schema id="21" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="22" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="23" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="24" parent="2" name="sis">
+      <ObjectId>61916</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-10-22.21:13:09.006</IntrospectionTimestamp>
+      <IntrospectionStateNumber>4124</IntrospectionStateNumber>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="25" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="27" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="28" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="29" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="30" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="31" parent="17" name="personas_id_seq">
+      <ObjectId>61918</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4107</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="32" parent="17" name="clientes">
+      <ObjectId>61929</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4108</StateNumber>
+    </table>
+    <table id="33" parent="17" name="empleados">
+      <ObjectId>61939</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4124</StateNumber>
+    </table>
+    <table id="34" parent="17" name="personas">
+      <ObjectId>61920</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4109</StateNumber>
+    </table>
+    <sequence id="35" parent="18" name="aerolineas_id_seq">
+      <ObjectId>61959</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4125</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="36" parent="18" name="aerolineas">
+      <ObjectId>61961</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4125</StateNumber>
+    </table>
+    <table id="37" parent="24" name="usuarios">
+      <ObjectId>61949</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>4124</StateNumber>
+    </table>
+    <column id="38" parent="32" name="idpersona">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4108</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="39" parent="32" name="pasaporte">
+      <Position>2</Position>
+      <DataType>char(9)|0s</DataType>
+      <StateNumber>4108</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="40" parent="32" name="visa">
+      <Position>3</Position>
+      <DataType>char(8)|0s</DataType>
+      <StateNumber>4108</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <index id="41" parent="32" name="pk_cliente">
+      <ObjectId>61932</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="32" name="pk_cliente">
+      <ObjectId>61933</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <UnderlyingIndexName>pk_cliente</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="43" parent="32" name="fk_cliente_persona">
+      <ObjectId>61934</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <RefTableId>61920</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personas</RefTableName>
+      <RefKeyName>pk_persona</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="44" parent="33" name="idpersona">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4109</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="45" parent="33" name="seguro">
+      <Position>2</Position>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4109</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="46" parent="33" name="afp">
+      <Position>3</Position>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4109</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="47" parent="33" name="pk_empleado">
+      <ObjectId>61942</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="33" name="pk_empleado">
+      <ObjectId>61943</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <UnderlyingIndexName>pk_empleado</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="33" name="fk_empleado">
+      <ObjectId>61944</ObjectId>
+      <ColNames>idpersona</ColNames>
+      <RefTableId>61920</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>personas</RefTableName>
+      <RefKeyName>pk_persona</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="50" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <DefaultExpression>nextval(&apos;avr.personas_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>avr.personas_id_seq</SequenceName>
+    </column>
+    <column id="51" parent="34" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="34" name="apellidopaterno">
+      <Position>3</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="53" parent="34" name="apellidomaterno">
+      <Position>4</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="34" name="genero">
+      <Position>5</Position>
+      <DataType>char|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="55" parent="34" name="dui">
+      <Position>6</Position>
+      <DataType>char(9)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="56" parent="34" name="nit">
+      <Position>7</Position>
+      <DataType>char(17)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="57" parent="34" name="telefono">
+      <Position>8</Position>
+      <DataType>char(9)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="58" parent="34" name="email">
+      <Position>9</Position>
+      <DataType>varchar(60)|0s</DataType>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="34" name="direccion">
+      <Position>10</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="60" parent="34" name="fechanacimiento">
+      <Position>11</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4107</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="61" parent="34" name="pk_persona">
+      <ObjectId>61927</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="34" name="pk_persona">
+      <ObjectId>61928</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pk_persona</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="63" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4125</StateNumber>
+      <DefaultExpression>nextval(&apos;cat.aerolineas_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>cat.aerolineas_id_seq</SequenceName>
+    </column>
+    <column id="64" parent="36" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4125</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="65" parent="36" name="pk_aerolinea">
+      <ObjectId>61965</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="36" name="pk_aerolinea">
+      <ObjectId>61966</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pk_aerolinea</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="37" name="nombre">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4124</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="37" name="contrasena">
+      <Position>2</Position>
+      <DataType>varchar(64)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4124</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="69" parent="37" name="idempleado">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>4124</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="70" parent="37" name="pk_usuario">
+      <ObjectId>61952</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="37" name="pk_usuario">
+      <ObjectId>61953</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>pk_usuario</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="72" parent="37" name="fk_usuario_empleado">
+      <ObjectId>61954</ObjectId>
+      <ColNames>idempleado</ColNames>
+      <RefTableId>61939</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefSchemaName>avr</RefSchemaName>
+      <RefTableName>empleados</RefTableName>
+      <RefKeyName>pk_empleado</RefKeyName>
+      <RefColNames>idpersona</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
